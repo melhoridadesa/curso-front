@@ -1,0 +1,90 @@
+$padrao_azul : #0070C0;
+$padrao_geral_cor : #000;
+$hover_bg_menu : #F9B277;
+$padrao_bg : #D4D4D4;
+$largura_total : 100%;
+$container_padrao : 1170px;
+$floatR: right;
+$floatL: left;
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	background:$padrao_bg;
+}
+main{
+	width:100%;
+	margin:0 auto;
+	max-width:$container_padrao;
+	display:block;
+}
+header,footer{
+	background:#fff;
+	width:$largura_total;
+	display:block;
+	margin:0;
+	padding:0;
+	.container_logo_menu{
+		width:$largura_total;
+		max-width: $container_padrao;
+		margin:0 auto;
+			figure{
+				float:$floatL;
+			}
+			nav{
+			 	display:table;
+			 	float:$floatR;
+			 	margin:20px 0;
+				 	ul {display:table-row;
+				 		li {
+				 			display:table-cell;
+				 			a{
+				 				text-decoration:none;
+				 				color:$padrao_geral_cor;
+				 				padding:15px;
+				 				display:block;
+				 				color:$padrao_geral_cor;
+				 			}
+				 			a:hover{
+				 				background:$hover_bg_menu;
+				 				color:#fff;
+				 			}
+				 		}
+				 	}
+			 }
+	}
+	
+ }
+footer{
+	.container_logo_menu{
+		display:table;
+	}
+	p{
+		display:inline;
+	}
+	ul{
+		dtext-decoration:none;
+		display:table-cell;
+		vertical-align:middle;
+		width: 87px;
+		li{
+			display:inline-block;
+		}
+	}
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     	* html .clearfix { height: 1%; }
+		.clearfix { display: block; }
+		.clearfix { display: inline-block; }
+
+     }/* start commented backslash hack \*/
+
+ 
+  
