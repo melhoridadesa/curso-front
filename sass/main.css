@@ -1,9 +1,25 @@
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  text-decoration: none;
+  list-style: none; }
 
+/*cabecario*/
 body {
-  background: #D4D4D4; }
+  background-color: #eee;
+  font-family: arial,helvetica, sans-serif; }
+
+body, section, footer, header, div, img, nav, ul, li, a {
+  border: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  white-space: nowrap; }
+
+h1, h3, h4, p {
+  white-space: normal;
+  border: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0; }
 
 main {
   width: 100%;
@@ -41,17 +57,22 @@ header, footer {
             background: #F9B277;
             color: #fff; }
 
-footer .container_logo_menu {
-  display: table; }
-footer p {
-  display: inline; }
-footer ul {
-  dtext-decoration: none;
-  display: table-cell;
-  vertical-align: middle;
-  width: 87px; }
-  footer ul li {
-    display: inline-block; }
+section {
+  max-width: 1170px; }
+
+footer {
+  padding: 10px 0; }
+  footer .container_logo_menu {
+    display: table; }
+  footer p {
+    display: inline; }
+  footer ul {
+    dtext-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    width: 87px; }
+    footer ul li {
+      display: inline-block; }
 
 .clearfix:after {
   visibility: hidden;

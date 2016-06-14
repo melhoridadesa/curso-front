@@ -1,0 +1,41 @@
+/*conteudo*/
+section{text-align:center; max-width: 1170px; margin: 20px 0;}
+
+
+.textos_body > div {
+	padding: 5px;
+	background-color: #fff;
+}
+.textos_body .titulo_texto {
+	text-align: left;
+	color:#1b6ea4;
+	padding-left:20px;
+}
+.texto_sociais {
+	text-align: right;
+}
+.texto_sociais .texto_facebook, .texto_sociais .texto_twitter {
+	display: inline;
+}
+.servicos {
+	display: table-cell;
+	padding: 0 15px ;
+	margin: 0px;
+}
+.servicos:first-child {
+	padding-left: 0px;
+}
+.servicos:last-child {
+	padding-right: 0px;
+}
+.servicos > div {
+	background-color: #fff;
+	display: block;
+}
+.titulo_servico {
+	padding: 5px;
+}
+.servicos > div > img{
+	min-height: 100px;
+}
+

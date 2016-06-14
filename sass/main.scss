@@ -1,18 +1,29 @@
 $padrao_azul : #0070C0;
 $padrao_geral_cor : #000;
 $hover_bg_menu : #F9B277;
-$padrao_bg : #D4D4D4;
+$padrao_bg : #eee;
 $largura_total : 100%;
 $container_padrao : 1170px;
 $floatR: right;
 $floatL: left;
+@mixin font_padrao{font-family:arial,helvetica, sans-serif;}
 *{
 	padding:0;
 	margin:0;
+	text-decoration:none;
+	list-style:none;
 }
+/*cabecario*/
+			
+			
 body{
-	background:$padrao_bg;
+	background-color:$padrao_bg;
+	@include font_padrao();
 }
+body, section, footer, header, div, img, nav, ul, li, a {
+	border:none; margin:0 0 0 0; padding:0 0 0 0; white-space: nowrap;
+}
+h1, h3 , h4, p { white-space: normal; border:none; margin:0 0 0 0; padding:0 0 0 0;}
 main{
 	width:100%;
 	margin:0 auto;
@@ -56,7 +67,11 @@ header,footer{
 	}
 	
  }
+ section{
+ 	max-width: 1170px;
+ }
 footer{
+	padding:10px 0;
 	.container_logo_menu{
 		display:table;
 	}
