@@ -9,7 +9,8 @@
 		<!-- jQuery library (served from Google) -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<!-- Plusin Carrosel -->
-		<link href="css/lightbox.css" rel="stylesheet">
+		<link href="js/jquery.bxslider.css" rel="stylesheet">
+		<!-- CSS -->
 		<link href="css/main.css" rel="stylesheet">
 
 
@@ -22,7 +23,7 @@
 
 				<div class = "imagemtexto">
 
-					<div class="texto">
+					<div class="titulo">
 						<h1> Quem Somos </h1>
 					</div>
 
@@ -37,21 +38,43 @@
 					</div>
 
 			</div>
-
-
-				<div class="image-row">
-					<a href="images/destaques/destaque-1.jpg" data-lightbox="example-set"><img class="example-image" src="images/destaques/tumb/destaque-1-tumb.jpg" alt="Melhor Idade"></a>
-					<a href="images/destaques/destaque-1.jpg" data-lightbox="example-set"><img class="example-image" src="images/destaques/tumb/destaque-1-tumb.jpg" alt="Melhor Idade"></a>
-					<a href="images/destaques/destaque-1.jpg" data-lightbox="example-set"><img class="example-image" src="images/destaques/tumb/destaque-1-tumb.jpg" alt="Melhor Idade"></a>
-					<a href="images/destaques/destaque-1.jpg" data-lightbox="example-set"><img class="example-image" src="images/destaques/tumb/destaque-1-tumb.jpg" alt="Melhor Idade"></a>
-					<a href="images/destaques/destaque-1.jpg" data-lightbox="example-set"><img class="example-image" src="images/destaques/tumb/destaque-1-tumb.jpg" alt="Melhor Idade"></a>
-				</div>
-
+			</div>
+			
+			<div class = "carrossel">
+		
+				<ul class="bxslider">
+    				<li><a href="http://placehold.it/1170x350&text=Slide 1" data-lightbox="gallery-name" data-title="Slide 1"><img src="images/destaques/destaque-1.jpg" /></a></li>
+				    <li><a href="images/destaques/destaque-1.jpg" data-lightbox="gallery-name" data-title="Slide 2"><img src="images/destaques/destaque-1.jpg" /></a>
+				    </li>
+				    <li><a href="images/destaques/destaque-1.jpg" data-lightbox="gallery-name" data-title="Slide 3"><img src="images/destaques/destaque-1.jpg" /></a>
+				    </li>
+				    <li><a href="images/destaques/destaque-1.jpg" data-lightbox="gallery-name" data-title="Slide 4"><img src="images/destaques/destaque-1.jpg" /></a>
+				    </li>
+				     <li><a href="http://placehold.it/1170x350&text=Slide 1" data-lightbox="gallery-name" data-title="Slide 1"><img src="images/destaques/destaque-1.jpg" /></a></li>
+				    <li><a href="images/destaques/destaque-1.jpg" data-lightbox="gallery-name" data-title="Slide 2"><img src="images/destaques/destaque-1.jpg" /></a>
+				    </li>
+				    <li><a href="images/destaques/destaque-1.jpg" data-lightbox="gallery-name" data-title="Slide 3"><img src="images/destaques/destaque-1.jpg" /></a>
+				    </li>
+				    <li><a href="images/destaques/destaque-1.jpg" data-lightbox="gallery-name" data-title="Slide 4"><img src="images/destaques/destaque-1.jpg" /></a>
+				    </li>
+				</ul>
 			</div>
 
 		</div>
 
 	</body>
 
-		<script src="js/lightbox.js"></script>
+		<script src="js/jquery.bxslider.js"></script>
+		
+		<script>
+			$(document).ready(function () {
+    		$('.bxslider').bxSlider({
+  			minSlides: 1,
+  			maxSlides: 4,
+  			slideWidth: 250,
+  			slideMargin: 10
+			});
+			});
+		</script>
+
 </html>

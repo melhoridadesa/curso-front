@@ -28,6 +28,10 @@
   			height: auto;
 		}
 
+		.titulo {
+			color: #80BFFF;
+		}
+
 		.texto {
 			width: 100%;
 			height: auto;			
@@ -65,10 +69,11 @@
 			padding-left: 1%;
 		}
 
-		.image-row {
-  			width: 100%;
-  			height: auto;
-  			position: relative;
-  			max-width: 1023px;
-  			margin: 0 auto;
+		.carrossel {
+			background: white;
+			box-sizing: border-box;
+			padding: 1%;
+			width: 100%;
+			height:auto;
+			margin-top: 9px;
 		}
