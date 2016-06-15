@@ -1,0 +1,13 @@
+vi /etc/hosts
+
+127.0.0.1  melhoridade.com.br
+
+/etc/apache2/sites-available
+
+<VirtualHost *:80>
+    ServerName melhoridade.com.br
+    DocumentRoot /var/www/curso-front
+</VirtualHost>
+
+a2ensite melhoridades.conf
+service apache2 reload
