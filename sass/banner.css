@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.img-gal img{
+	width: 100%;
+}
+.img-gal.slick-slide {
+  height: auto;
+}
+ul.slick-dots li button {
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin: 0 8% !important;
+  color:#c9c9c9;
+}
+ul.slick-dots li {
+  margin: 0 1%;
+  background-color: #c9c9c9;
+  border-radius: 50%;
+}
+ul.slick-dots li.slick-active {
+  margin: 0 1%;
+  content: '';
+  background: #ff8000;
+  border-radius: 50%;
+  color:#ff8000;
+}
+ul.slick-dots li button:before {
+	content: '';
+	}
+
+ul.slick-dots {
+  bottom: 5%;
+}

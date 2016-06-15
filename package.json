@@ -1,11 +1,16 @@
 {
+<<<<<<< HEAD
   "name": "curso-front",
+=======
+  "name": "exercicio",
+>>>>>>> banner
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+<<<<<<< HEAD
   "repository": {
     "type": "git",
     "url": "git+https://github.com/melhoridadesa/curso-front.git"
@@ -23,5 +28,11 @@
   },
   "dependencies": {
     "gulp": "^3.9.1"
+=======
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.0.0"
+>>>>>>> banner
   }
 }
