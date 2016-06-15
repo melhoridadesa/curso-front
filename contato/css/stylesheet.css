@@ -72,7 +72,7 @@ html {
 }
 .form {
 	display: inline-flex;
-	height: 350px;
+	height: 380px;
 	width: 100%;
 	background: #FFFFFF;
 	
@@ -88,10 +88,10 @@ html {
 	border-right: 1px solid black;
 	
 }
-.FormContato h3{
-	color: blue;
-
-	
+.FormContato h3 {
+  color: #0000ff;
+  margin: 0;
+  margin-bottom: 2%;
 }
 
 form {
@@ -104,7 +104,7 @@ form {
 	
 }
 .name{
-	width: 100%;
+	width: 90%;
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
@@ -112,27 +112,79 @@ form {
 #nome{	
 	width: 100%;
 }
-
+input#nome, input#cpf, input#endereco, input#email{
+  width: 100%;
+  height: 25px;
+  float: left;
+  margin: 1.5% 0;
+  padding: 0;
+  padding-left: 2.5%;
+  box-sizing: border-box;
+  border-radius: 0;
+  border-color: initial;
+  border: 1px solid #CBCBCB;
+}
+input#data, input#telefone {
+  width: 49.5%;
+  height: 25px;
+  box-sizing: border-box;
+  padding-left: 2.5%;
+  margin: 1.5% 0;
+  float: left;
+  border: 1px solid #CBCBCB;
+}
+textarea#mensagem {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 2.5%;
+  height: 55px;
+  border: 1px solid #CBCBCB;
+}
+ input#telefone{
+ 	margin-left: 1%;
+ }
+ input.btn {
+  width: 20%;
+  border: 0;
+  background-color: #ff8000;
+  float: right;
+  height: 20px;
+  font-size: 80%;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px #c9c9c9;
+  margin-top: 2.5%;
+}
+.endereco p {
+  margin: 0;
+  padding: 0;
+}
 .Data{
 	display: inline-block;
-	width: 50%;
+	width: 45%;
 	margin-bottom: 4px;
-	
+	float: left;	
 }
 
 #data{
 	display: block;
-	width: 50%;
+	width: 100%;
+}
+
+.line{
+  width: 100%;	
 }
 
 .CPF {
-	
-	width: 50%;
-	
+	display: block;	
+	width: 45%;
+	float: left;
 }
-#txtCPF{
+
+#cpf{
 	display: inline-block;
-	width: 50%;
+	width: 100%;
 	margin-bottom: 4px;
 }
 
@@ -153,14 +205,17 @@ form {
 	height: 100px; 
 	margin-top: 10px;
 	padding: 0;
-
 }
 
-
+.endereco p:nth-child(0), .endereco p:nth-child(4),  .endereco p:nth-child(6){
+	margin-top: 10%;
+}
 .endereco {
-	display: inline-block;
-	width: 50%;
-
+  display: inline-block;
+  width: 50%;
+  padding-left: 10px;
+  box-sizing: border-box;
+  padding-top: 5%;
 }
 
 .maps {
