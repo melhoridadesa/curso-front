@@ -22,6 +22,7 @@ section{text-align:center; max-width: 1170px; margin: 20px 0;}
 	padding: 0 15px ;
 	margin: 0px;
 }
+
 .servicos:first-child {
 	padding-left: 0px;
 }
@@ -31,6 +32,9 @@ section{text-align:center; max-width: 1170px; margin: 20px 0;}
 .servicos > div {
 	background-color: #fff;
 	display: block;
+}
+#section_servicos{
+	display:inline-block;
 }
 .titulo_servico {
 	padding: 5px;

@@ -22,7 +22,15 @@ section {
 .servicos {
   display: table-cell;
   padding: 0 15px;
-  margin: 0px; }
+  margin: 0px;
+
+}
+
+#section_servicos{
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+}
 
 .servicos:first-child {
   padding-left: 0px; }
@@ -36,6 +44,10 @@ section {
 
 .titulo_servico {
   padding: 5px; }
+
+.texto_texto {
+  padding: 10px 20px 10px 20px;
+}
 
 .servicos > div > img {
   min-height: 100px; }
