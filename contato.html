@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang"pt-br">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/contato.css">
+	<title>Casa de idosos</title>
+</head>
+<body class="body">
+	<header class="header">
+		<div class="logo"> 
+			<img src="images/logo.png" alt="MelhoridadeSA" title="Logo_MelhoridadeSA"/>
+		</div>
+		<nav class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Quem somos</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+
+		</nav>
+	</header>
+	<section class="formgeral">
+		<div class="form">
+			<div class="FormContato">
+				<h3>Entre em contato</h3>				
+				<form  method="post" id="form" name="contato">
+    			    <input type="text" class="nome inputs" name="nome" id="nome" placeholder="Nome Completo:" />
+					<input type="date" class="data inputs" id="data" placeholder="Data de nascimento"  required/>
+					<input type="text" class="telefone inputs" id="telefone" placeholder="Telefone" />
+    				<input type="text" class="cpf inputs" name="cpf" id="cpf" placeholder="CPF" >
+    			    <input type="text" class="endereco inputs" id="endereco" placeholder="Endereco" />
+					<input type="email" class="email inputs" id="email" placeholder="E-mail" required />
+					
+					<div class="textarea">
+					    <textarea id="mensagem" class="inputs" placeholder="Digite Aqui" ></textarea>
+					</div>
+					
+					<input type="submit" class="btn" name="submit" value="Enviar"/>					
+				</form>				
+			</div>
+			<div class="endereco">
+				<p><b>Endereco:</b></p>
+				<p>Rua vergueiro, 3054 - Vila Mariana,</p>
+				<p>Sao Paulo - SP, 04101-300</p>
+				<p><b>Telefone para contato</b></p>
+				<p><a href="tel:1112345678">55+(11)1234-5678</a></p>
+				<p><b>Email para contato:</b></p>
+				<p><a href="mailto:doacoes@melhoridade.com.br">doacoes@melhoridade.com.br</a></p>
+				<p><a href="mailto:contato@melhoridade.com.br">contato@melhoridade.com.br</a></p>
+			</div>
+		</div>
+	</section>
+	<section class="maps">
+	<script class="maps2" src='https://maps.googleapis.com/maps/api/js?v=3.exp'>		
+		</script>
+	<div style='overflow:hidden;height:250px;width:100%'>
+		<div id='gmap_canvas' style='height:400px;width:100%'>
+			
+		</div>
+			<div>
+				<small><a href="http://embedgooglemaps.com">embed google map</a></small>
+			</div>
+			<div>
+				<small><a href="http://www.proxysitereviews.com /lime-proxies/">lime proxies</a></small>
+			</div>
+				<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+		</div>
+
+		<script type='text/javascript'>
+		   function init_map(){
+		   	  var myOptions = {
+		   	  	zoom:16,center:new google.maps.LatLng(-23.5875841,-46.633565799999985),mapTypeId: google.maps.MapTypeId.ROADMAP
+		   	  };
+		   	  map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+		   	  marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-23.5875841,-46.633565799999985)});
+		   	  infowindow = new google.maps.InfoWindow({content:'<strong>melhor idade sa</strong><br>rua vergueiro,3054<br>'});
+		   	  google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+		   	  infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+		</script>
+
+	</section>
+	<div class="footer">
+		<p>Melhor idade SA</p>
+		<p>Front-4linux</p>
+	</div>
+<body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" ></script>
+<script type="text/javascript" src="js/validacao.js"></script>
+<script type="text/javascript" src="js/masked-input.js"></script>
