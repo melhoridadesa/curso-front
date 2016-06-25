@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  angular.module('feira-app', ['ngRoute']);
+  angular.module('feira-app', ['ngRoute', 'angularCSS']);
 
   angular.module('feira-app')
     .run(function($rootScope, $route, $routeParams, $location) {

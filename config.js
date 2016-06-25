@@ -6,11 +6,18 @@
       $routeProvider
         .when('/', {
           templateUrl: 'home.html',
-          controller: 'homeController'
+          controller: 'homeController',
+          css:''
         })
-        .when('/quemsomos', {
-          templateUrl: 'quemsomos.html',
-          controller: 'quemSomosController'
+        .when('/sobre', {
+          templateUrl: 'sobre.html',
+          controller: 'sobreController',
+          css:''
+        })
+        .when('/contato', {
+          templateUrl: 'contato.html',
+          controller: 'ContatoController',
+          css:''
         });
     });
 })();
