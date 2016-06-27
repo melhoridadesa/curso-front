@@ -66,14 +66,11 @@ html {
 }
 
 
-
 .formgeral {
 	margin:15px;
 }
+
 .form {
-	display: inline-flex;
-	height: 380px;
-	width: 100%;
 	background: #FFFFFF;
 	
 }
@@ -88,138 +85,9 @@ html {
 	border-right: 1px solid black;
 	
 }
-.FormContato h3 {
-  color: #0000ff;
-  margin: 0;
-  margin-bottom: 2%;
-}
-
-form {
-	display: inline-block;
-
-}
-/*Campos do formulatrio*/
-
-#contato{
-	
-}
-.name{
-	width: 90%;
-	margin-top: 4px;
-	margin-bottom: 4px;
-}
-
-#nome{	
-	width: 100%;
-}
-input#nome, input#cpf, input#endereco, input#email{
-  width: 100%;
-  height: 25px;
-  float: left;
-  margin: 1.5% 0;
-  padding: 0;
-  padding-left: 2.5%;
-  box-sizing: border-box;
-  border-radius: 0;
-  border-color: initial;
-  border: 1px solid #CBCBCB;
-}
-input#data, input#telefone {
-  width: 49.5%;
-  height: 25px;
-  box-sizing: border-box;
-  padding-left: 2.5%;
-  margin: 1.5% 0;
-  float: left;
-  border: 1px solid #CBCBCB;
-}
-textarea#mensagem {
-  width: 100%;
-  float: left;
-  box-sizing: border-box;
-  padding-left: 2.5%;
-  height: 55px;
-  border: 1px solid #CBCBCB;
-}
- input#telefone{
- 	margin-left: 1%;
- }
- input.btn {
-  width: 20%;
-  border: 0;
-  background-color: #ff8000;
-  float: right;
-  height: 20px;
-  font-size: 80%;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 5px 10px #c9c9c9;
-  margin-top: 2.5%;
-}
-.endereco p {
-  margin: 0;
-  padding: 0;
-}
-.Data{
-	display: inline-block;
-	width: 45%;
-	margin-bottom: 4px;
-	float: left;	
-}
-
-#data{
-	display: block;
-	width: 100%;
-}
-
-.line{
-  width: 100%;	
-}
-
-.CPF {
-	display: block;	
-	width: 45%;
-	float: left;
-}
-
-#cpf{
-	display: inline-block;
-	width: 100%;
-	margin-bottom: 4px;
-}
-
-#endereco {
-	display: inline;
-	width: 50%;
-}
-
-.textarea{
-	display: inline-block;
-	width: 100%;
-
-}
-
-#textarea{
-	display: inline-block;
-	width: 100%;
-	height: 100px; 
-	margin-top: 10px;
-	padding: 0;
-}
-
-.endereco p:nth-child(0), .endereco p:nth-child(4),  .endereco p:nth-child(6){
-	margin-top: 10%;
-}
-.endereco {
-  display: inline-block;
-  width: 50%;
-  padding-left: 10px;
-  box-sizing: border-box;
-  padding-top: 5%;
-}
 
 .maps {
-	margin: 15px;
+	padding: 0;
 
 }
 
@@ -231,3 +99,68 @@ textarea#mensagem {
 	background: #FFFFFF;
 }
 
+
+form#contato_melhor_idade .form-group label.full{
+		width: 100%;
+	}
+	form#contato_melhor_idade .form-group input.full{
+		width: 100%;
+	}
+	form#contato_melhor_idade .form-group input.set50{
+		width: 50%;
+	}
+	form#contato_melhor_idade .form-group input.set5{
+		width:75%;
+		float: left;
+	}
+	
+	.erro_class{
+		-webkit-box-shadow: 0px 0px 16px 0px rgba(255, 0, 0, 1);
+		-moz-box-shadow:    0px 0px 16px 0px rgba(255, 0, 0, 1);
+		box-shadow:         0px 0px 16px 0px rgba(255, 0, 0, 1);
+	}
+	form {
+	    border-right: 1px solid #ccc;
+	    margin-bottom: 25px;
+	    position: relative;
+	}	
+	#loading{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background:rgba(0,0,0,0.5);
+		z-index: 3;
+		display: none;
+	}
+	#cep{
+		display: block;
+	    height: 34px;
+	    padding: 6px 12px;
+	    font-size: 14px;
+	    line-height: 1.42857143;
+	    color: #555;
+	    background-color: #fff;
+	    background-image: none;
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	}
+	@media screen and (max-width: 630px){
+		form#contato_melhor_idade .form-group input#cep{
+			width: 100%;	
+			float: none;	
+		}
+		form#contato_melhor_idade .form-group button.vinte5 {
+		    width: 120px;
+		    margin: 15px auto 0 auto;
+		    display: block;
+		    float: none;
+		}
+	}
+</style>

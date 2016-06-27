@@ -2,8 +2,10 @@
 <html lang"pt-br">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/contato.css">
 	<title>Casa de idosos</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/contato.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
 <body class="body">
 	<header class="header">
@@ -20,27 +22,70 @@
 		</nav>
 	</header>
 	<section class="formgeral">
-		<div class="form">
-			<div class="FormContato">
-				<h3>Entre em contato</h3>				
-				<form  method="post" id="form" name="contato">
-    			    <input type="text" class="nome inputs" name="nome" id="nome" placeholder="Nome Completo:" />
-					<input type="date" class="data inputs" id="data" placeholder="Data de nascimento"  required/>
-					<input type="text" class="telefone inputs" id="telefone" placeholder="Telefone" />
-    				<input type="text" class="cpf inputs" name="cpf" id="cpf" placeholder="CPF" >
-    			    <input type="text" class="endereco inputs" id="endereco" placeholder="Endereco" />
-					<input type="email" class="email inputs" id="email" placeholder="E-mail" required />
-					
-					<div class="textarea">
-					    <textarea id="mensagem" class="inputs" placeholder="Digite Aqui" ></textarea>
+		<div class="form container">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+				<h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><b>Entre em contato</b></h3>				
+				<form method="post" class="horizontal col-lg-12 col-md-12 col-sm-12 col-xs-12" id="contato_melhor_idade">
+					<div id="loading"></div>
+					<div class="form-group col-xs-12 col-sm-6 col-md-6">
+						<label for="exampleInputEmail1">Nome:</label>
+						<div class="input-group col-xs-12 col-sm-12 col-md-12">	
+							<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>	
+							<input type="text" class="form-control full" id="nome" placeholder="Email">
+						</div>
 					</div>
-					
-					<input type="submit" class="btn" name="submit" value="Enviar"/>					
-				</form>				
+					<div class="form-group col-xs-12 col-sm-6 col-md-6">
+						<label for="exampleInputPassword1">Sobrenome:</label>
+						<div class="input-group col-xs-12 col-sm-12 col-md-12">	
+							<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>	
+							<input type="text" class="form-control full" id="sobrenome" placeholder="Password">
+						</div>
+					</div>
+					<div class="form-group col-xs-12 col-sm-6 col-md-6">
+						<label for="exampleInputPassword1">E-mail:</label>
+						<div class="input-group  col-xs-12 col-sm-12 col-md-12">				
+							<div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+							<input type="email" class="form-control full" id="exampleInputPassword1" placeholder="Password">
+						</div>
+					</div>
+					<div class="form-group col-lg-3 col-xs-12 col-sm-6 col-md-6">
+						<label for="exampleInputPassword1"">CPF:</label>
+						<input type="text" class="form-control" id="cpf" placeholder="Password">
+					</div>
+					<div class="form-group col-lg-3 col-xs-12 col-sm-6 col-md-6">
+						<label for="exampleInputEmail1">Telefone:</label>
+						<input type="text" class="form-control" id="telefone" placeholder="Telefone">
+					</div>
+					<div class="form-group col-lg-6 col-xs-12 col-sm-12 col-md-6">
+						<label for="exampleInputPassword1"  class="full">CEP:</label>
+						<input type="text" class="col-lg-7 col-md-7 col-sm-7 col-xs-12" id="cep" placeholder="Password">
+						<button class="btn btn-default col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-5" id="verificar_cep">Verificar CEP</button>
+					</div>
+					<div class="form-group col-lg-6 col-xs-12 col-sm-6 col-md-6">
+						<label for="exampleInputPassword1">Rua:</label>
+						<input type="text" class="form-control" id="rua" placeholder="Password">
+					</div>
+					<div class="form-group col-lg-6 col-xs-12 col-sm-6 col-md-6">
+						<label for="exampleInputPassword1">Bairro:</label>
+						<input type="text" class="form-control" id="bairro" placeholder="Password">
+					</div>
+					<div class="form-group col-lg-6 col-xs-12 col-sm-6 col-md-6">
+						<label for="exampleInputPassword1">Cidade:</label>
+						<input type="text" class="form-control" id="cidade" placeholder="Password">
+					</div>
+					<div class="form-group col-lg-6 col-xs-12 col-sm-12 col-md-12">
+						<label for="exampleInputPassword1" class="full">Estado:</label>
+						<input type="text" class="form-control" id="estado" placeholder="Password">
+					</div>
+					<div class="clearfix"></div>
+					<div class="form-group col-xs-12 col-sm-12 col-md-12">
+						<button type="submit" class="btn btn-default pull-right">Enviar</button>
+					</div>
+				</form>
 			</div>
-			<div class="endereco">
-				<p><b>Endereco:</b></p>
-				<p>Rua vergueiro, 3054 - Vila Mariana,</p>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<h3><b>Endereco:</b></h3>
+				<p>Rua vergueiro, 3054 - Vila Mariana</p>
 				<p>Sao Paulo - SP, 04101-300</p>
 				<p><b>Telefone para contato</b></p>
 				<p><a href="tel:1112345678">55+(11)1234-5678</a></p>
@@ -50,7 +95,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="maps">
+	<section class="maps container center-block">
 	<script class="maps2" src='https://maps.googleapis.com/maps/api/js?v=3.exp'>		
 		</script>
 	<div style='overflow:hidden;height:250px;width:100%'>
@@ -87,5 +132,6 @@
 </html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" ></script>
-<script type="text/javascript" src="js/validacao.js"></script>
-<script type="text/javascript" src="js/masked-input.js"></script>
+<!-- <script type="text/javascript" src="js/validacao.js"></script> -->
+<script src="js/contato.js"></script>
+<script type="text/javascript" src="js/<jquery class="maskedinput min js"></jquery>"></script>
