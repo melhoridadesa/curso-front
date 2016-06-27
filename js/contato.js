@@ -21,6 +21,7 @@ $(document).ready(function(){
 				$('#bairro').val(data.district);
 				$('#cidade').val(data.city);
 				$('#estado').val(data.state);
+				$('.desabilitar').prop("disabled", true);
 			},complete: function() {
 		        $('#loading').hide();
 		    }
@@ -38,6 +39,22 @@ $(document).ready(function(){
 		}else{
 			console.log("CPF Inválido");
 			cpf_valor.addClass('erro_class');
+		}
+		var validar_cep = /^\d{5}-\d{3}/;
+		cep_valor = $('#cep');
+		if (validar_cep.test(cep_valor.val()) == true) {
+			console.log('CEP Válido');
+		}else{
+			console.log("CEP Inválido");
+			cep_valor.addClass('erro_class');
+		}
+		var validar_email = /^[a-zA-Z0-9][a-zA-Z0-9\._-]+@([a-zA-Z0-9\._-]+\.)[a-zA-Z-0-9]{2,3}/; 
+		email_valor = $('#email');
+		if (validar_email.test(email_valor.val()) == true) {
+			console.log('E-mail Válido');
+		}else{
+			console.log("E-mail Inválido");
+			email_valor.addClass('erro_class');
 		}
 		//Validacao nome
 		nome_valor = $('#nome').val();
