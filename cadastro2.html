@@ -9,6 +9,7 @@
 		<title>Melhor Idade SA</title>
     	<!-- Bootstrap -->
     	<link href="css/bootstrap.min.css" rel="stylesheet">
+    	<link href="css/cadastro.css" rel="stylesheet">
 	</head>
 	<body>
 		<header>
@@ -21,29 +22,24 @@
 		<main>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-xs-4">
-						<h2>Informacoes do idoso</h2>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<h2>Informacoes do responsavel</h2>
 					</div>
 				</div>
 			<form>
-				<div class="row">
-					<div class="col-xs-4 form-group">
-						<input type="text" class="form-control" name="nome" id="nome" placeholder="Nome completo">
-					</div>
-					<div class="col-xs-2 form-group">
-						<input type="text" class="form-control" name="cpf" id="cpf" placeholder="CPF">
-					</div>
+				<div class="col-xs-12 col-sm-6 col-lg-6 col-md-6 form-group">
+					<input type="text" class="form-control" name="nome" id="nome" placeholder="Nome completo">
+				</div>
+				<div class="col-xs-12 col-sm-6 col-lg-4 col-md-4 form-group">
+					<input type="text" class="form-control" name="cpf" id="cpf" placeholder="CPF">
 				</div>
 
-				<div class="row">					
-					<div class="col-xs-2 form-group">
-						<label>Data de Nascimento:</label>
-						<input type="date" class="form-control" name="dt_nasc" id="dt_nasc">
-					</div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
+					<label>Data de Nascimento:</label>
+					<input type="date" class="form-control" name="dt_nasc" id="dt_nasc">
 				</div>
 
-				<div class="row">
-					<div class="col-xs-3 form-group">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
 						<label class="control-label">Sexo:</label>
 						<label class="radio-inline">
 						  <input type="radio" name="genero" id="genero" value="masculino"> Masculino
@@ -51,41 +47,34 @@
 						<label class="radio-inline">
 						  <input type="radio" name="genero" id="genero" value="feminino"> Feminino
 						</label>
-					</div>
 				</div>
 
-				<div class="row">
-					<div class="col-xs-4 form-group">
-						<input type="text" class="form-control" name="endereco" id="endereco" placeholder="Endereco">
-					</div>
-					<div class="col-xs-1 form-group">
-						<input type="text" class="form-control" name="numero" id="numero" placeholder="No.">
-					</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  form-group">
+					<input type="text" class="form-control" name="endereco" id="endereco" placeholder="Endereco">
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 form-group">
+					<input type="text" class="form-control" name="numero" id="numero" placeholder="No.">
 				</div>
 
-				<div class="row">
-					<div class="col-xs-3 form-group">
-						<input type="text" class="form-control" name="complemento" id="complemento" placeholder="Complemento">
-					</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  form-group">
+					<input type="text" class="form-control" name="complemento" id="complemento" placeholder="Complemento">
 				</div>
 
-				<div class="row">
-					<div class="col-xs-2 form-group">
-						<input type="text" class="form-control" name="telefone" id="telefone" placeholder="Telefone">
-					</div>					
-				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  form-group">
+					<input type="text" class="form-control" name="telefone" id="telefone" placeholder="Telefone">
+				</div>					
 
-				<div class="row">
-					<div class="col-xs-2">
-						<button type="button" class="btn btn-primary">Cancelar</button>
-					</div>
-					<div class="col-xs-2">
+				<div class="col-xs-6 col-md-4 col-sm-4 col-lg-4 margin-button">
+					<button type="button" class="btn btn-primary">Cancelar</button>
+				</div>
+				<div class="col-xs-6 col-md-4 col-sm-4 col-lg-4 margin-button">
 						<button type="button" class="btn btn-primary">Cadastrar +1</button>
 					</div>
-					<div class="col-xs-2">
-						<button type="button" class="btn btn-primary">Finalizar</button>
-					</div>
+				<div class="col-xs-6 col-md-4 col-sm-4 col-lg-4 margin-button">
+					<button type="button" class="btn btn-primary">Finalizar cadastro</button>
 				</div>
+
 
 			</form>
 			</div>
