@@ -1,0 +1,140 @@
+
+html{
+
+    height: 100%;
+    
+}
+
+body {
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    height: 10vh;
+    background-color: #7db6de;
+    width: 100%;
+}
+
+.footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    background-color: #7db6de;
+}
+
+.left{
+    float: left;
+    width: 20%;
+    background-color: #7db6de;
+    height: 85vh;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menulateral {
+    padding-left: 0;
+    margin: 0;
+}
+
+
+.menulateral p{
+    border-bottom: 1px solid #635435;
+    padding: 15px;
+    margin: 0;
+}
+
+.menulateral p:hover {
+    background-color:#0472c0;
+    padding: 15px;
+}
+
+.menulateral a {
+    color: white;
+    list-style: none;
+}
+
+.menulateral a:hover {
+
+    text-decoration: none;
+}
+
+.menulateral p{
+    
+    
+}
+
+.menulateral h3 {
+    color:#f9c285;
+}
+.right {
+    float: right;
+    width: 80%;
+    height: 85vh;
+    background-color: aliceblue;
+}
+
+.headright {
+    float: right;
+    width: 80%;
+}
+
+.headleft{
+    float: left;
+    width: 20%;
+}
+
+/*
+.corpo {
+
+    background-color: crimson;
+}
+*/
+
+.coluna {
+    padding: 0;
+    margin: 0;
+}
+
+
+.lateral {
+    
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+.icons {
+    float: left;
+    
+}
+
+
+.menutop {
+    float: right;
+
+}
+
+
+.img_perfil_logo{
+    height: 40px;
+    width: 35px;
+    border-right: 1px solid #635435;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+.respfoto{
+    height: 120px;
+    width:  120px;
+    margin-bottom: 3px;
+}
+
+.spaceadmins{
+    padding-bottom: 5px;
+}
