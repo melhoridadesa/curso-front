@@ -56,39 +56,38 @@ section {
 
 /*Conteudo home*/
 #barra_topo {
-height: 60px;
-}
-#barra_topo nav{
-padding-top: 6px;
-}
-#logo{
-	width: 100%;
-	display: block;
-	padding: 0;
-	margin: 0;
-}
-#logo img{
-	max-width: 250px;
-}
-#banner_home ul li figure img{max-width: 805px;}
-main .bx-wrapper .bx-viewport{
-	border:none;
-	box-shadow:none;
-}
-#sobre_melhor_idade{
-	margin:15px auto;
-}
-#sobre_melhor_idade article{
-	padding:1%;
-}
-.bg-branco{
-	background:#fff;
-}
-footer
-{
-	padding: 0;
-}
-footer ul {
-	list-style-type:none;
-	padding: 0;
-}
+        height: 60px;
+      }
+      #barra_topo nav{
+        padding-top: 6px;
+      }
+    #logo{
+      display: block;
+      padding: 0;
+      margin: 0;
+    }
+    #logo img{
+      max-width: 205px;
+    }
+    #banner_home ul li figure img{max-width: 805px;}
+    main .bx-wrapper .bx-viewport{
+      border:none;
+      box-shadow:none;
+    }
+    .ajustar_nav{
+      height: auto !important;
+    }
+    .mostrar_menu{
+      display: block;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+    }
+    footer
+    {
+      padding: 0;
+    }
+    footer ul {
+      list-style-type:none;
+      padding: 0;
+    }
