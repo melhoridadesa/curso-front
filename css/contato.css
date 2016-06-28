@@ -67,14 +67,22 @@ html {
 
 
 .formgeral {
-	margin:15px;
+    padding: 15px 0;
+    margin: 10px 0;
 }
 
 .form {
 	background: #FFFFFF;
-	
+	    padding: 25px 0;
 }
-
+p{
+	width: 100%;
+	text-align: left;
+}
+h3{
+	margin: 10px 0;
+	text-align: left;
+}
 
 .FormContato {
 	clear: both;
@@ -89,6 +97,14 @@ html {
 .maps {
 	padding: 0;
 
+}
+label {
+    text-align: left;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    width: 100%;
+    display: block;
 }
 
 .footer {
