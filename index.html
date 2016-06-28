@@ -28,8 +28,24 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="quemsomos.html">Quem Somos</a></li>
 				<li><a href="contato.html">Contato</a></li>
+				<li class="login-home"><a href="#modal-login">Login</a></li>
 			</ul>
 		</nav>
+			<div class="modal" id="modal-login" aria-hidden="true">
+  				<div class="modal-content">
+    				<div class="modal-header">
+      					<h2>Ja tem conta?</h2>
+  						<a href="#fechar" class="btn-fechar" aria-hidden="true"><button>×</button></a>
+    				</div>
+    				<div class="modal-body">
+      					<input type="text" placeholder="Login">
+      					<input type="password" placeholder="Senha">
+    				</div>
+    				<div class="modal-footer">
+      					<a href="#close" class="btn"><button>Enviar</button></a>  <!--CHANGED TO "#close"-->
+    				</div>
+    			</div>
+  			</div>
 		<div class="clearfix"></div>
 	</div>
 </header>
