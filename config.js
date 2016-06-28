@@ -5,17 +5,17 @@
     .config(function($routeProvider) {
       $routeProvider
         .when('/', {
-          templateUrl: 'home.html',
+          templateUrl: 'views/home.html',
           controller: 'homeController',
           css:''
         })
         .when('/sobre', {
-          templateUrl: 'sobre.html',
+          templateUrl: 'views/sobre.html',
           controller: 'sobreController',
           css:''
         })
         .when('/contato', {
-          templateUrl: 'contato.html',
+          templateUrl: 'views/contato.html',
           controller: 'ContatoController',
           css:''
         });

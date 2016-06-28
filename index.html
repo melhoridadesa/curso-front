@@ -6,9 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Melhor Idade SA</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="sass/main.css">
-	<link rel="stylesheet" href="sass/home.css">
-	<link rel="stylesheet" type="text/css" href="sass/banner.css"/>
+	<link rel="stylesheet" href="dist/css/main.css">
+	<link rel="stylesheet" href="dist/css/home.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/banner.css"/>
 
 	<link rel="stylesheet" type="text/css" href="src/css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="src/css/slick-theme.css"/>
@@ -36,13 +36,15 @@
 
 </body>
 <footer>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.6";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.6";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
 
 <footer>
 	<div class="container_logo_menu">
@@ -57,10 +59,10 @@
 	</div>
 </footer>
 <script src="node_modules/angular/angular.min.js"></script>
-  <script src="node_modules/angular-route/angular-route.js"></script>
-  <script src="node_modules/angular-css/angular-css.js"></script>
-  <script src="app.js"></script>
-  <script src="config.js"></script>
+<script src="node_modules/angular-route/angular-route.js"></script>
+<script src="node_modules/angular-css/angular-css.js"></script>
+<script src="app.js"></script>
+<script src="config.js"></script>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script src="src/js/slick.min.js"></script>
@@ -68,11 +70,11 @@
 		<script>
 			$(document).ready(function () {
     		$('.bxslider').bxSlider({
-  			minSlides: 1,
-  			maxSlides: 4,
-  			slideWidth: 250,
-  			slideMargin: 10
-			});
+		  			minSlides: 1,
+		  			maxSlides: 4,
+		  			slideWidth: 250,
+		  			slideMargin: 10
+				});
 			});
 		</script>
 </html>
