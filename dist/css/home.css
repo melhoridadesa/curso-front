@@ -1,3 +1,7 @@
+.navbar-default .navbar-nav>li>a:hover {
+  background: #FCCD9A;
+  color: #fff;
+}
 /*conteudo
 section {
   text-align: center;
@@ -55,8 +59,19 @@ section {
 # sourceMappingURL=home.css.map */
 
 /*Conteudo home*/
+#sobre_melhor_idade article {
+    background: #fff;
+    padding: 15px;
+    max-width: 910px;
+    margin: 0 auto;
+    float: none;
+}
+section#atividades_home {
+  max-width: 910px;
+  padding: 0;
+ }
 #barra_topo {
-        height: 60px;
+        height: 52px;
       }
       #barra_topo nav{
         padding-top: 6px;
@@ -91,3 +106,13 @@ section {
       list-style-type:none;
       padding: 0;
     }
+@media screen and (max-width: 480px){
+  #atividades_home article {
+      padding: 0px;
+  }
+}
+@media screen and (min-width: 992px){
+  section#atividades_home article {
+      padding: 1px;
+  }
+}
