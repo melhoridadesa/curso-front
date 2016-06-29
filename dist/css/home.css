@@ -106,6 +106,9 @@ section#atividades_home {
       list-style-type:none;
       padding: 0;
     }
+    section .bx-wrapper .bx-viewport{
+      background: transparent;
+    }
 @media screen and (max-width: 480px){
   #atividades_home article {
       padding: 0px;

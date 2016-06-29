@@ -6,7 +6,6 @@
       $routeProvider
         .when('/', {
           templateUrl: 'views/home.html',
-          controller: 'homeController',
           css:''
         })
         .when('/sobre', {

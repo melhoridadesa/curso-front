@@ -1,6 +1,8 @@
+
+var melhorIdadeApp = angular.module('feira-app',['ngRoute', 'angularCSS']);
+
 (function() {
   'use strict';
-  angular.module('feira-app', ['ngRoute', 'angularCSS']);
 
   angular.module('feira-app')
     .run(function($rootScope, $route, $routeParams, $location) {
